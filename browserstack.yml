@@ -1,0 +1,34 @@
+# ======================
+# BrowserStack Reporting
+# ======================
+projectName: BrowserStack MCP Runs
+build: mcp-run
+userName: 
+accessKey: 
+
+# =======================================
+# Platforms (Browsers / Devices to test)
+# =======================================
+
+platforms:
+  - os: Windows
+    osVersion: 11
+    browserName: chrome
+    browserVersion: latest
+  - os: macOS
+    osVersion: Sonoma
+    browserName: safari
+    browserVersion: latest
+
+# =======================
+# Parallels per Platform
+# =======================
+parallelsPerPlatform: 1
+
+browserstackLocal: false
+
+# ===================
+# Debugging features
+# ===================
+debug: true
+testObservability: true
